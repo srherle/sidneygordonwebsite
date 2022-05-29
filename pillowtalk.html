@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sidney Gordon's Site</title>
+        <link rel="icon" href="favicon.png" type="image/x-icon">
+    </head>
+
+    <style>
+
+
+     @font-face {
+         font-family: 'Arial';
+         font-weight: normal;
+         font-style: normal;
+
+     }
+
+     html{
+         font-size:15px;
+         line-height:1;
+         font-family: 'Arial';
+     }
+
+     body{
+         background-color: white;
+         padding: 20px;
+     }
+
+     .wrapper {
+         display: grid;
+         grid-template-columns: 1fr 3fr 0.5fr;
+         grid-template-rows:1fr;
+     }
+
+     .navigationbar{
+         position: fixed;
+         grid-column: 1;
+     }
+
+     .column1{
+         grid-column: 1;
+         position: relative;
+         margin-right: 175px;
+     }
+
+     .bio{
+         grid-column: 2;
+         margin-left: 1fr;
+         position: relative;
+         columns: 2 auto;
+         margin-top: 50px;
+     }
+
+     h1 {
+         color: black;
+         font-size: 20px;
+         font-weight: bold;
+         grid-column: 1;
+     }
+
+     h2 {
+         color: black;
+         font-size: 15px;
+         font-weight: normal;
+         grid-column: 1;
+
+     }
+
+
+
+     ul {
+         grid-column: 1;
+         list-style-type: none;
+         padding-left: 0;
+         color: grey;
+         margin-top: -0.5em;
+     }
+
+     p {
+         color: black;
+         grid-column: 2;
+     }
+
+     a:hover {
+         text-decoration: underline;
+     }
+
+     img{
+         max-width: 100%;
+         margin-right: 10px;
+     }
+
+     .img1{
+         grid-column: 2;
+     }
+
+     a.list{
+         color: grey;
+         text-decoration: none;
+     }
+
+     a.blacklink{
+         color: black;
+         text-decoration: none;
+     }
+
+     a:hover {
+         text-decoration: underline;
+     }
+
+     @media (orientation:portrait){
+
+         .wrapper{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+
+         .navigationbar{
+             transform: scale(0);
+         }
+         .column1{
+             position: absolute;
+         }
+         .bio{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-wrap: wrap;
+
+         }
+
+         img{
+             margin-left: 50px;
+             margin-right: 50px;
+             max-width: 80%;
+         }
+
+         p{
+             font-size: 1rem;
+             margin-left:50px;
+             margin-right:50px;
+             text-align: center;
+         }
+     }
+
+    </style>
+    <div class="wrapper">
+
+        <div class="column1">
+
+        <div class="navigationbar">
+
+        <h1> Sidney Gordon </h1>
+
+        <h2> filmography </h2>
+
+        <ul>
+            <li><a class="list" href="iseemewatching.html">i see me watching</a></li>
+            <li><a class="list" href="pillowtalk.html">Pillow Talk</a></li>
+            <li><a class="list" href="ourcityonfire.html">Our City on Fire</a></li>
+            <li><a class="list" href="thebigbang.html">The Big Bang</a></li>
+            <li><a class="list" href="pneuma.html">PNEUMA</a></li>
+        </ul>
+
+        <h2> photography </h2>
+
+        <ul>
+            <li><a class="list" href="cyanotypes.html">cyanotypes</a></li>
+            <li><a class="list" href="watergrams.html">watergrams</a></li>
+            <li><a class="list" href="chemigrams.html">chemigrams</a></li>
+        </ul>
+
+        <h2><a class="blacklink" href="installationperformance.html">installation / performance</a></h2>
+
+        <h2><a class="blacklink" href="bio.html">bio / artist statement</a></h2>
+
+        <h2><a class="blacklink" href="cv.html">cv</a></h2>
+
+        <h2><a class="blacklink" href="contact.html"> contact</a></h2>
+
+        <h2><a class="blacklink" href="https://vimeo.com/sidneygordon">vimeo</a> / <a class="blacklink" href="https://www.instagram.com/dirttones/?hl=en"> instagram</a></h2>
+
+        </div>
+
+        </div>
+
+<p> 
+  (Coming Soon)
+      </p>
+
+        </section>
+</div>
+    </body>
+</html>
