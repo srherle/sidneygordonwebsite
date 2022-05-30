@@ -10,7 +10,7 @@
 
 
      @font-face {
-         font-family: 'Arial';
+         font-family: "Arial"
          font-weight: normal;
          font-style: normal;
 
@@ -19,7 +19,7 @@
      html{
          font-size:15px;
          line-height:1;
-         font-family: 'Arial';
+         font-family:"Arial";
      }
 
      body{
@@ -44,12 +44,10 @@
          margin-right: 175px;
      }
 
-     .bio{
+     .artwork{
          grid-column: 2;
          margin-left: 1fr;
          position: relative;
-         columns: 2 auto;
-         margin-top: 50px;
      }
 
      h1 {
@@ -67,7 +65,21 @@
 
      }
 
+     h3 {
+         color: black;
+         font-size: 20px;
+         font-weight: bold;
+         grid-column: 2;
+         text-align: center;
+     }
 
+     span.h4 {
+         color: grey;
+         font-size: 15px;
+         font-weight: normal;
+         grid-column: 2;
+         text-align: center;
+     }
 
      ul {
          grid-column: 1;
@@ -78,9 +90,18 @@
      }
 
      p {
-         color: black;
+         color: grey;
          grid-column: 2;
      }
+
+     a{
+         text-decoration: none;
+     }
+
+     a.blacklink{
+         color: black
+     }
+
 
      a:hover {
          text-decoration: underline;
@@ -88,11 +109,22 @@
 
      img{
          max-width: 100%;
-         margin-right: 10px;
      }
 
      .img1{
          grid-column: 2;
+     }
+
+     .img2{
+         grid-column: 2;
+     }
+
+     .img3{
+         grid-column: 2;
+     }
+
+     .italics{
+         font-style: italic;
      }
 
      a.list{
@@ -100,12 +132,7 @@
          text-decoration: none;
      }
 
-     a.blacklink{
-         color: black;
-         text-decoration: none;
-     }
-
-     a:hover {
+     a.list:hover{
          text-decoration: underline;
      }
         
@@ -116,7 +143,6 @@
          font-weight: normal;
          text-align: center;
      }
-
 
     </style>
     <div class="wrapper">
@@ -130,7 +156,7 @@
         <h2> filmography </h2>
 
         <ul>
-            <li><a class="list" href="iseemewatching.html">i see me watching</a></li>
+            <li><a class="list" href="iseemewatching.html">i see me watching<a><li>
             <li><a class="list" href="pillowtalk.html">Pillow Talk</a></li>
             <li><a class="list" href="ourcityonfire.html">Our City on Fire</a></li>
             <li><a class="list" href="thebigbang.html">The Big Bang</a></li>
@@ -140,7 +166,7 @@
         <h2> photography </h2>
 
         <ul>
-            <li><a class="list" href="watergrams.html">X̱á7elcha (Lynn Creek) Watergrams</a></li>
+            <li><a class="list"" href="watergrams.html">X̱á7elcha (Lynn Creek) Watergrams</a></li>
         </ul>
 
         <h2>installation / performance</h2>
@@ -148,41 +174,50 @@
         <li><a class="list" href="installationperformance.html">Central Beam of Light</a></li>
         </ul>
 
-        <h2><a class="blacklink" href="bio.html">bio / artist statement</a></h2>
+        <h2><a class="blacklink" href="bio.html">bio / artist statement </a></h2>
 
         <h2><a class="blacklink" href="cv.html">cv</a></h2>
 
-        <h2><a class="blacklink" href="contact.html"> contact</a></h2>
+        <h2><a class="blacklink" href="contact.html">contact</a></h2>
 
-        <h2><a class="blacklink" href="https://vimeo.com/sidneygordon">vimeo</a> / <a class="blacklink" href="https://www.instagram.com/dirttones/?hl=en"> instagram</a></h2>
-
-        </div>
+        <h2><a class="blacklink" href="https://vimeo.com/sidneygordon">vimeo</a> / <a class="blacklink" href="https://www.instagram.com/dirttones/?hl=en">instagram</a></h2>
 
         </div>
 
-<h3><span class="italics"> i see me watching</span></br>
-        </h3>
-    </br>
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/712489047?h=b2fc4f4af2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Pillow Talk (In Progress) Excerpt"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-</br>
+        </div>
 
-<p>
-**CONTENT WARNING: NUDITY, EXPLICIT LANGUAGE, SEXUAL INTERCOURSE AND SEXUAL VIOLENCE**
-</br></br>
-16mm b&w negative film, eco-processed with caffinol developer, 2021 (In Progress)
-</br></br>
-Interviewees:</br>
-Lucy Wicken</br>
-Samantha Hugues</br>
-Celina de Leon</br>
-Madeleine Keen</br>
-Hallieday Fraser-Low</br>
-Amber Keulen</br>
-Visual Subjects: Anonymous</br>
-Score: Jamie Lee</br>
-Scanning: Filmhouse Vancouver
-</p>
+        <div class="artwork">
 
+            <h3><span class="italics">Pillow Talk</span></br>
+            </h3>
+
+            <br>
+
+
+          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/712489047?h=b2fc4f4af2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Pillow Talk (In Progress) Excerpt"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+
+
+        </br>
+
+        <p>
+            16mm b&w negative film, eco-processed with caffinol developer, 2021 (In Progress)
+                </br></br>
+                Interviewees:</br>
+                Lucy Wicken</br>
+                Samantha Hugues</br>
+                Celina de Leon</br>
+                Madeleine Keen</br>
+                Hallieday Fraser-Low</br>
+                Amber Keulen</br>
+                Visual Subjects: Anonymous</br>
+                Score: Jamie Lee</br>
+                Scanning: Filmhouse Vancouver</br>
+
+        </p>
+
+           
+        </div>
 
         </section>
 </div>
