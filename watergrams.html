@@ -16,10 +16,46 @@
 
      }
 
+          @font-face {
+         font-family: 'alte_haas_groteskregular';
+         src: url('fontregular/altehaasgroteskregular-webfont.woff2') format('woff2'),
+         url('fontregular/altehaasgroteskregular-webfont.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+
+     }
+
+     @font-face {
+         font-family: 'alte_haas_groteskbold';
+         src: url('fontbold/altehaasgroteskbold-webfont.woff2') format('woff2'),
+         url('fontbold/altehaasgroteskbold-webfont.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+
+     }
+
+     @font-face {
+         font-family: 'firamono_regular';
+         src: url('font/firamono-regular.woff2') format('woff2'),
+         url('font/firamono-regular.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+
+     }
+
+     @font-face {
+         font-family: 'firamono_bold';
+         src: url('font/firamono-bold.woff2') format('woff2'),
+         url('font/firamono-bold.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+
+     }
+
      html{
          line-height:1;
-         font-family: 'Arial';
-         font-size: 15px;
+         font-family: 'firamono_regular';
+         font-size: 13px;
      }
 
      body{
@@ -49,29 +85,34 @@
          margin-left: 1fr;
          position: relative;
          align-items: center;
+         margin-right: 15px;
+         margin-left: 15px;
      }
 
      h1 {
          color: black;
-         font-size: 20px;
+         font-size: 18px;
          font-weight: bold;
          grid-column: 1;
+         font-family: 'alte_haas_groteskbold';
      }
 
      h2 {
          color: black;
-         font-size: 1rem;
+         font-size: 13px;
          font-weight: normal;
          grid-column: 1;
+         font-family: 'alte_haas_groteskbold';
 
      }
 
      h3 {
          color: black;
-         font-size: 1.6rem;
+         font-size: 18px;
          font-weight: bold;
          grid-column: 2;
          text-align: center;
+         font-family: 'alte_haas_groteskbold';
      }
 
      span.h4 {
@@ -80,6 +121,7 @@
          font-weight: normal;
          grid-column: 2;
          text-align: center;
+         font-family: 'firamono_regular';
      }
 
      ul {
@@ -92,7 +134,7 @@
      }
 
      p {
-         color: grey;
+         color: black;
          grid-column: 2;
          font-size:1rem;
      }
@@ -131,7 +173,7 @@
      }
 
      a.list{
-         color: grey;
+         color: black;
          text-decoration: none;
      }
 
@@ -145,6 +187,11 @@
          grid-column: 2;
          font-weight: normal;
          text-align: center;
+         font-family: 'firamono_regular';
+     }
+
+     .current {
+         color: grey;
      }
 
     </style>
@@ -152,38 +199,38 @@
 
         <div class="column1">
 
-        <div class="navigationbar">
+            <div class="navigationbar">
 
-        <h1> Sidney Gordon </h1>
+                <h1> Sidney Gordon </h1>
 
-        <h2> filmography </h2>
+                <h2> filmography </h2>
 
-        <ul>
-            <li><a class="list" href="iseemewatching.html">i see me watching<a><li>
-            <li><a class="list" href="pillowtalk.html">Pillow Talk</a></li>
-            <li><a class="list" href="ourcityonfire.html">Our City on Fire</a></li>
-            <li><a class="list" href="thebigbang.html">The Big Bang</a></li>
-            <li><a class="list" href="pneuma.html">PNEUMA</a></li>
-        </ul>
+                <ul>
+                    <li><a class="list" href="iseemewatching.html">i see me watching<a><li>
+                        <li><a class="list" href="pillowtalk.html">Pillow Talk</a></li>
+                        <li><a class="list" href="ourcityonfire.html">Our City on Fire</a></li>
+                        <li><a class="list" href="thebigbang.html">The Big Bang</a></li>
+                        <li><a class="list" href="pneuma.html">PNEUMA</a></li>
+                </ul>
 
-        <h2> photography </h2>
+                <h2> photography </h2>
 
-        <ul>
-            <li><a class="list" href="watergrams.html">X̱á7elcha (Lynn Creek) </br>Watergrams</a></li>
-        </ul>
+                <ul>
+                    <li><a class="list" href="watergrams.html"><span class="current"> X̱á7elcha (Lynn Creek)</br>Watergrams</span></a></li>
+                </ul>
 
-        <h2>installation / performance</h2>
-        <ul>
-        <li><a class="list" href="installationperformance.html">Central Beam of Light</a></li>
-        </ul>
+                <h2>installation / performance</h2>
+                <ul>
+                    <li><a class="list" href="installationperformance.html">Central Beam of Light</a></li>
+                </ul>
 
-        <h2><a class="blacklink" href="bio.html"> bio / artist statement </a></h2>
+                <h2><a class="blacklink" href="bio.html"> bio / artist statement </a></h2>
 
-        <h2><a class="blacklink" href="cv.html">cv</a></h2>
+                <h2><a class="blacklink" href="cv.html">cv</a></h2>
 
-        <h2><a class="blacklink" href="https://vimeo.com/sidneygordon">vimeo</a> / <a class="blacklink" href="https://www.instagram.com/dirttones/?hl=en">instagram</a> / <a class="blacklink" href="mailto:sidneyg335@gmail.com ">email</a></h2>
+                <h2><a class="blacklink" href="https://vimeo.com/sidneygordon">vimeo</a> / <a class="blacklink" href="https://www.instagram.com/dirttones/?hl=en">instagram</a> / <a class="blacklink" href="mailto:sidneyg335@gmail.com ">email</a></h2>
 
-        </div>
+            </div>
 
         </div>
 
@@ -192,71 +239,72 @@
             <h3><span class="italics">X̱á7elcha (Lynn Creek) Watergrams</span></br>
 
                 <span class="description">2022. 20 x 24. silver gelatin prints.
-            </span>
+                </span>
             </h3>
 
 
 
 
-        <p>
-
-            The light-sensitive surface is a direct canvas for material collaboration. My work, <span class="italics"> X̱á7elcha (Lynn Creek) Watergrams</span>, focuses on using this method to give authorship to this river as we work in alliance with each other. By submerging photographic paper in the water and capturing direct prints of its refractions, we render what the human eye and traditional photographic practices would otherwise be unable to produce.
-            </br>   </br>
-            This type of intervention calls for a holistic approach, assuring that every material and action I engage with interacts with the water as respectfully as possible. Through this process, I use location-specific materials: such as a developer made from surrounding blossoms, and river water as a stop bath. These photochemical alternatives alongside the natural forces and matter captured in the prints demonstrate how distinctive their interplay makes the images produced.
-            </br>   </br>
-            This river is one I see as my kin, and through this practice, I acknowledge my position on this land as both a maker and a marker. X̱á7elcha (Lynn Creek), has a long history of surrounding settler development. With this work, I aim to bring forward a symbiotic relation that creates dialogue around this body of water beyond what's surfacely portrayed, and challenges viewers to investigate the footprints they leave through their daily habits.
-            </br>   </br>
-            Project Assistants:   </br>
-            Emil Vargas   </br>
-            Tillie Roy   </br>
-            Leo Mah   </br>
-            Felicity Crisp   </br>
-            Taliesin Mason-McCrea </br>
-
-
-
-        </p>
-
-            </br>
-
-        <img id="img2" src="watergramsinstallation.jpg"></br>
-
-            <span class="description">
-                Installation view of Sidney Gordon, <span class="italics"> Dog Rose, Autumn Leaves and Red Flowering Current 1, 2 & 3 from X̱á7elcha (Lynn Creek) Watergrams</span> (series), 20 x 22 silver gelatin prints. 2022, Photo by Michael Love.
-            </span>
-
-
-            </br></br>
-
-<img id="img2" src="watergram1.jpg"></br>
-            <span class="description">
-                <span class="italics"> Dog Rose, Autumn Leaves and Red Flowering Current 1 from X̱á7elcha (Lynn Creek) Watergrams </span>(series), 20 x 22 silver gelatin prints. 2022
-            </span>
-</br></br>
-<img id="img2" src="watergram2.jpg"></br>
-            <span class="description">
-                <span class="italics"> Dog Rose, Autumn Leaves and Red Flowering Current 3  from X̱á7elcha (Lynn Creek) Watergrams</span> (series), 20 x 22 silver gelatin prints. 2022
-            </span>
-</br></br>
-<img id="img2" src="watergram3.jpg"></br>
-        <span class="description">
-            <span class="italics"> Dog Rose, Autumn Leaves and Red Flowering Current 2 from X̱á7elcha (Lynn Creek) Watergrams</span> (series), 20 x 22 silver gelatin prints. 2022
-        </span>
-</br></br>
-
             <p>
-                Exhibitions:
-            </br> </br>
-            2023 - upcoming - X̱á7elcha (Lynn Creek) Watergrams series, group show with Ana Valine and Karen Zalamea, Or Gallery, Vancouver BC </br>
-            2022 - repetition + difference, Emily Carr Student Exhibition, two-person show with David Macgillivray, ECU, Vancouver BC </br>
-            2022 - Stranger than Fiction, curated by Emmy Lee Wall, Capture Photography Festival, Vancouver BC </br>
+
+                The light-sensitive surface is a direct canvas for material collaboration. My work, <span class="italics"> X̱á7elcha (Lynn Creek) Watergrams</span>, focuses on using this method to give authorship to this river as we work in alliance with each other. By submerging photographic paper in the water and capturing direct prints of its refractions, we render what the human eye and traditional photographic practices would otherwise be unable to produce.
+                    </br>   </br>
+                    This type of intervention calls for a holistic approach, assuring that every material and action I engage with interacts with the water as respectfully as possible. Through this process, I use location-specific materials: such as a developer made from surrounding blossoms, and river water as a stop bath. These photochemical alternatives alongside the natural forces and matter captured in the prints demonstrate how distinctive their interplay makes the images produced.
+                    </br>   </br>
+                    This river is one I see as my kin, and through this practice, I acknowledge my position on this land as both a maker and a marker. X̱á7elcha (Lynn Creek), has a long history of surrounding settler development. With this work, I aim to bring forward a symbiotic relation that creates dialogue around this body of water beyond what's surfacely portrayed, and challenges viewers to investigate the footprints they leave through their daily habits.
+                    </br>   </br>
+                    Project Assistants:   </br>
+                    Emil Vargas   </br>
+                    Tillie Roy   </br>
+                    Leo Mah   </br>
+                    Felicity Crisp   </br>
+                    Taliesin Mason-McCrea </br>
+
+
 
             </p>
-            </br>
+
+                    </br>
+
+                    <img id="img2" src="watergramsinstallation.jpg"></br>
+
+                    <span class="description">
+                        Installation view of Sidney Gordon, <span class="italics"> Dog Rose, Autumn Leaves and Red Flowering Current 1, 2 & 3 from X̱á7elcha (Lynn Creek) Watergrams</span> (series), 20 x 22 silver gelatin prints. 2022, Photo by Michael Love.
+                    </span>
+
+
+                    </br></br>
+
+                    <img id="img2" src="watergram1.jpg"></br>
+                    <span class="description">
+                        <span class="italics"> Dog Rose, Autumn Leaves and Red Flowering Current 1 from X̱á7elcha (Lynn Creek) Watergrams </span>(series), 20 x 22 silver gelatin prints. 2022
+                    </span>
+                    </br></br>
+                    <img id="img2" src="watergram2.jpg"></br>
+                    <span class="description">
+                        <span class="italics"> Dog Rose, Autumn Leaves and Red Flowering Current 3  from X̱á7elcha (Lynn Creek) Watergrams</span> (series), 20 x 22 silver gelatin prints. 2022
+                    </span>
+                    </br></br>
+                    <img id="img2" src="watergram3.jpg"></br>
+                    <span class="description">
+                        <span class="italics"> Dog Rose, Autumn Leaves and Red Flowering Current 2 from X̱á7elcha (Lynn Creek) Watergrams</span> (series), 20 x 22 silver gelatin prints. 2022
+                    </span>
+                    </br></br>
+
+                    <p>
+                        Exhibitions:
+                    </br> </br>
+                    2023 - upcoming - X̱á7elcha (Lynn Creek) Watergrams series, group show with Ana Valine and Karen Zalamea, Or Gallery, Vancouver BC </br>
+                    2022 - repetition + difference, Emily Carr Student Exhibition, two-person show with David Macgillivray, ECU, Vancouver BC </br>
+                    2022 - Stranger than Fiction, curated by Emmy Lee Wall, Capture Photography Festival, Vancouver BC </br>
+
+                    </p>
+                    </br>
 
         </div>
 
         </section>
-</div>
+    </div>
     </body>
 </html>
+
