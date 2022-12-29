@@ -8,18 +8,47 @@
 
     <style>
 
-
-     @font-face {
-         font-family: 'Arial';
+      @font-face {
+         font-family: 'alte_haas_groteskregular';
+         src: url('fontregular/altehaasgroteskregular-webfont.woff2') format('woff2'),
+         url('fontregular/altehaasgroteskregular-webfont.woff') format('woff');
          font-weight: normal;
          font-style: normal;
 
      }
 
+     @font-face {
+         font-family: 'alte_haas_groteskbold';
+         src: url('fontbold/altehaasgroteskbold-webfont.woff2') format('woff2'),
+         url('fontbold/altehaasgroteskbold-webfont.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+
+     }
+
+     @font-face {
+         font-family: 'firamono_regular';
+         src: url('font/firamono-regular.woff2') format('woff2'),
+         url('font/firamono-regular.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+
+     }
+
+     @font-face {
+         font-family: 'firamono_bold';
+         src: url('font/firamono-bold.woff2') format('woff2'),
+         url('font/firamono-bold.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+
+     }
+
+
      html{
-         font-size:15px;
+         font-size:13px;
          line-height:1;
-         font-family: 'Arial';
+         font-family: 'firamono_regular';
      }
 
      body{
@@ -50,20 +79,24 @@
          position: relative;
          columns: 2 auto;
          margin-top: 50px;
+         margin-right: 15px;
+         margin-left: 15px;
      }
 
      h1 {
          color: black;
-         font-size: 20px;
+         font-size: 18px;
          font-weight: bold;
          grid-column: 1;
+         font-family: 'alte_haas_groteskbold';
      }
 
      h2 {
          color: black;
-         font-size: 15px;
+         font-size: 13px;
          font-weight: normal;
          grid-column: 1;
+         font-family: 'alte_haas_groteskbold';
 
      }
 
@@ -73,12 +106,12 @@
          grid-column: 1;
          list-style-type: none;
          padding-left: 0;
-         color: grey;
+         color: black;
          margin-top: -0.5em;
      }
 
      p {
-         color: grey;
+         color: black;
          grid-column: 2;
      }
 
@@ -95,16 +128,11 @@
          grid-column: 2;
      }
 
-      a.list{
-         color: grey;
-         text-decoration: none;
-     }
-
      a.blacklink{
          color: black;
          text-decoration:none;
      }
-        
+
      a:hover {
          text-decoration: underline;
      }
@@ -119,152 +147,157 @@
      }
 
      a.list{
-         color: grey;
+         color: black;
          text-decoration: none;
      }
 
      a.list:hover{
          text-decoration: underline;
      }
-        
-                .italics{
-            font-style: italic;
-        }
+
+     .italics{
+         font-style: italic;
+     }
+
+     .current {
+         color: grey;
+     }
 
     </style>
     <div class="wrapper">
 
         <div class="column1">
 
-        <div class="navigationbar">
+            <div class="navigationbar">
 
-        <h1> Sidney Gordon </h1>
+                <h1> Sidney Gordon </h1>
 
-        <h2> filmography </h2>
+                <h2> filmography </h2>
 
-        <ul>
-            <li><a class="list" href="iseemewatching.html">i see me watching</a></li>
-            <li><a class="list" href="pillowtalk.html">Pillow Talk</a></li>
-            <li><a class="list" href="ourcityonfire.html">Our City on Fire</a></li>
-            <li><a class="list" href="thebigbang.html">The Big Bang</a></li>
-            <li><a class="list" href="pneuma.html">PNEUMA</a></li>
-        </ul>
+                <ul>
+                    <li><a class="list" href="iseemewatching.html">i see me watching</a></li>
+                    <li><a class="list" href="pillowtalk.html">Pillow Talk</a></li>
+                    <li><a class="list" href="ourcityonfire.html">Our City on Fire</a></li>
+                    <li><a class="list" href="thebigbang.html">The Big Bang</a></li>
+                    <li><a class="list" href="pneuma.html">PNEUMA</a></li>
+                </ul>
 
-        <h2> photography </h2>
+                <h2> photography </h2>
 
-        <ul>
-            <li><a class="list" href="watergrams.html">X̱á7elcha (Lynn Creek) </br>Watergrams</a></li>
-        </ul>
+                <ul>
+                    <li><a class="list" href="watergrams.html">X̱á7elcha (Lynn Creek) </br>Watergrams</a></li>
+                </ul>
 
-        <h2>installation / performance</h2>
-        <ul>
-        <li><a class="list" href="installationperformance.html">Central Beam of Light</a></li>
-        </ul>
+                <h2>installation / performance</h2>
+                <ul>
+                    <li><a class="list" href="installationperformance.html">Central Beam of Light</a></li>
+                </ul>
 
-        <h2><a class="blacklink" href="bio">bio / artist statement</a></h2>
+                <h2><a class="blacklink" href="bio">bio / artist statement</a></h2>
 
-        <h2><a class="blacklink" href="cv.html">cv</a></h2>
+                <h2><a class="blacklink" href="cv.html"><span class="current">cv</span></a></h2>
 
-        <h2> <a class="blacklink" href="https://vimeo.com/sidneygordon">vimeo</a> / <a class="blacklink" href="https://www.instagram.com/dirttones/?hl=en">instagram</a>
-         / <a class="blacklink" href="mailto:sidneyg335@gmail.com ">email</a></h2>
+                <h2> <a class="blacklink" href="https://vimeo.com/sidneygordon">vimeo</a> / <a class="blacklink" href="https://www.instagram.com/dirttones/?hl=en">instagram</a>
+                    / <a class="blacklink" href="mailto:sidneyg335@gmail.com ">email</a></h2>
 
-        </div>
+            </div>
 
         </div>
 
         <div class="bio">
 
 
-                <h1>cv</h1>
-                <p>
-                    education / training
-            </br></br>
-            2022 - Bachelor of Media Arts, Emily Carr University of Art and Design, Vancouver BC
-            </br></br>
-            awards
-            </br></br>
-2022 - Polygon Gallery’s Lind Prize, Shortlist Nominee</br>
-2022 - Chancellors Jury Award, Winner, <span class="italics">i see me watching</span>, Emily Carr University of Art + Design</br>
-2022 - VIVO Distribution Award, Winner, <span class="italics">i see me watching</span></br>
-2022 - Best Experimental, Winner, <span class="italics">i see me watching</span>, Emily Carr University of Art + Design</br>
-            2021 - Polygon Gallery’s Lind Prize, Longlist Nominee</br>
-            </br></br>
-            screenings / exhibitions
-            </br></br>
-2023 - upcoming - <span class="italics">X̱á7elcha (Lynn Creek) Watergrams</span> series, group show with Ana Valine and Karen Zalamea, Or Gallery, Vancouver BC</br> 
-2022 - upcoming - <span class="italics">The Rubbings</span> series, Phillip B. Lind Prize, group show, The Polygon Gallery, Vancouver BC</br>
-2022 - <span class="italics">i see me watching</span>, Vancouver International Film Festival, Short Forum 2, Vancity Theatre, Vancouver BC</br>
-2022 - <span class="italics">i see me watching</span>, Best of Animation + Film/Video Showcase, Reliance Theatre, ECU, Vancouver BC</br>
-2022 - <span class="italics">i see me watching</span>, SPARKING: An Emily Carr Film and Screen Arts Graduate Showcase, Pacific Cinematheque, Vancouver BC</br>
-2022 - <span class="italics">X̱á7elcha (Lynn Creek) Watergrams</span>; repetition + difference, Emily Carr Student Exhibition, two-person show with David MacGillivray, ECU, Vancouver BC</br>
-2022 - <span class="italics">X̱á7elcha (Lynn Creek) Watergrams</span>; Stranger than Fiction, curated by Emmy Lee Wall, Capture Photography Festival, Vancouver BC </br>
-2021 - <span class="italics">The Big Bang</span>, BLITZ #37 curated program, Zumzieg Cinema, Barcelona ES (by invitation)</br>
-2021 - <span class="italics">Our City on Fire</span>, Bien Agiter curated program, Vancouver BC  (by invitation)</br>
-            2020 - Foundation Show, ECU, Vancouver BC</br>
-            2018 - IB Art Show, Campbell Collegiate, Regina SK</br>
-            </br></br>
-            filmography
-            </br></br>
-2022 - <span class="italics">i see me watching</span>, director / producer. experimental narrative short
-            </br></br>
-            screenings: Vancouver International Film Festival, Short Forum 2, Vancity Theatre, Vancouver BC (2022), Best of Animation + Film/Video Showcase, Reliance Theatre, ECU, Vancouver BC (2022), SPARKING: An Emily Carr Film and Screen Arts Graduate Showcase, Pacific Cinematheque, Vancouver BC (2022)
-            </br></br>
-            awards: Chancellors Jury Award, Winner, Emily Carr University of Art + Design (2022), VIVO Distribution Award, Winner (2022)
-            </br></br>
-2020 - <span class="italics">Our City on Fire</span>, director / producer, experimental short, 16mm
-            </br></br>
-            screenings: Bien Agiter curated virtual program (by invitation) (2021)
-            </br></br>
-2020 - <span class="italics">The Big Bang</span>, director / producer, experimental short, 16mm
-            </br></br>
-            screenings: BLITZ #37 curated program, Zumzieg Cinema, Barcelona ES (by invitation) (2021)
-            </br></br>
-2019 - <span class="italics">PNEUMA</span>, director / producer, experimental short, 16mm to digital
-            </br></br>
-            photography
-            </br></br>
-ongoing - <span classs="italics">X̱á7elcha (Lynn Creek) Watergrams</span>, 20 x 24 silver gelatin prints
-            </br></br>
-            notable project contributions
-            </br></br>
-            2021 - Animator / Assistant, <span class="italics">Ajjigiingiluktaaqtugut (We Are All Different)</span> by Lindsay McIntyre, experimental animation</br>
-            2021 - Assistant / Photographer, <span class="italics">Lindsay McIntyre is Inviting You to a Scheduled Zoom Meeting</span> by Lindsay McIntyre</br>
-            2021 - 1st Assistant Director / Assistant Camera, <span class="italics">My Fantasies Keep me up at Nite</span> by Celina De Leon</br>
-2021 - Set Decorator, <span class="italics">A Stargazers Guide to Filmmaking</span> by Warren Tang</br>
-            </br></br>
-            press / interviews
-            </br></br>
-            2022 - <span class="italics">Five Not-To-Miss Shows at the 9th Annual Capture Photography Festival</span>, SCOUT Magazine</br>
-            2022 - <span class="italics">Truth, Intimacy and the Power of Photography through the Lenses of Khim Hipol, Abigail Pfortmueller, David Aquino and Sidney Gordon</span>, by Charisma Christal Thomas, Shumka Centre  for Creative Entrepreneurship</br>
-            2021 - <span class="italics">Sidney Gordon Highlights the Importance of Communication and Collaboration with Artist Lindsay McIntyre</span>, by Nicole Yamamoto, Shumka Centre for Creative Entrepreneurship</br>
-            </br></br>
-            artist talks
-            </br></br>
-2022 - <span class="italics">‘Stranger Than Fiction’ Artist Talk</span>, Capture Photography Festival
-            </br></br>
-            workshop facilatation / teaching
-            </br></br>
-            2021 - 2022 - <span class="italics">Shoebox Filmmaking for the Shoestring Filmmaker</span>, The Gathering, NIMAC, Teacher’s Assistant for experimental analog workshop series. Created and assembled workshop resources and materials, taught techniques, and ran demonstrations to a group of indigenous workshop participants.
-            </br></br>
-            curation
-            </br></br>
-2022 - <span class="italics">Void of the Voice</span>, experimental film program for XINEMA, VIFF Centre’s Studio Theatre</br>  
-2022 - <span class="italics">Times Ling Past</span>, experimental film program for XINEMA, VIFF Centre’s Studio Theatre</br> 
-2022 - <span class="italics">Left with Grain</span>, experimental film program for VUCAVU
-            </br></br>
-            publications
-            </br></br>
-2022 - <span class="italics">Handmade Cinema Guide</span>, self-published zine</br>
-            2020 - <span class="italics">How Gentrification has Impacted “Vancouver’s” Outdoor Sex Workers</span>, self-published zine </br>
-2020 - <span class="italics">Beginners Guide to Analogue Cinema</span>, self-published zine</br>
-            </br></br>
-            collections / distribution
-            </br></br>
-2022 - <span class="italics">i see me watching</span>, VIVO Media Arts Centre
+            <h1>cv</h1>
+            <p>
+                education / training
+                    </br></br>
+                    2022 - Bachelor of Media Arts, Emily Carr University of Art and Design, Vancouver BC
+                    </br></br>
+                    awards
+                    </br></br>
+                    2022 - Polygon Gallery’s Lind Prize, Shortlist Nominee</br>
+                    2022 - Chancellors Jury Award, Winner, <span class="italics">i see me watching</span>, Emily Carr University of Art + Design</br>
+                    2022 - VIVO Distribution Award, Winner, <span class="italics">i see me watching</span></br>
+                    2022 - Best Experimental, Winner, <span class="italics">i see me watching</span>, Emily Carr University of Art + Design</br>
+                    2021 - Polygon Gallery’s Lind Prize, Longlist Nominee</br>
+                    </br></br>
+                    screenings / exhibitions
+                    </br></br>
+                    2023 - upcoming - <span class="italics">X̱á7elcha (Lynn Creek) Watergrams</span> series, group show with Ana Valine and Karen Zalamea, Or Gallery, Vancouver BC</br>
+                    2022 - upcoming - <span class="italics">The Rubbings</span> series, Phillip B. Lind Prize, group show, The Polygon Gallery, Vancouver BC</br>
+                    2022 - <span class="italics">i see me watching</span>, Vancouver International Film Festival, Short Forum 2, Vancity Theatre, Vancouver BC</br>
+                    2022 - <span class="italics">i see me watching</span>, Best of Animation + Film/Video Showcase, Reliance Theatre, ECU, Vancouver BC</br>
+                    2022 - <span class="italics">i see me watching</span>, SPARKING: An Emily Carr Film and Screen Arts Graduate Showcase, Pacific Cinematheque, Vancouver BC</br>
+                    2022 - <span class="italics">X̱á7elcha (Lynn Creek) Watergrams</span>; repetition + difference, Emily Carr Student Exhibition, two-person show with David MacGillivray, ECU, Vancouver BC</br>
+                    2022 - <span class="italics">X̱á7elcha (Lynn Creek) Watergrams</span>; Stranger than Fiction, curated by Emmy Lee Wall, Capture Photography Festival, Vancouver BC </br>
+                    2021 - <span class="italics">The Big Bang</span>, BLITZ #37 curated program, Zumzieg Cinema, Barcelona ES (by invitation)</br>
+                    2021 - <span class="italics">Our City on Fire</span>, Bien Agiter curated program, Vancouver BC  (by invitation)</br>
+                    2020 - Foundation Show, ECU, Vancouver BC</br>
+                    2018 - IB Art Show, Campbell Collegiate, Regina SK</br>
+                    </br></br>
+                    filmography
+                    </br></br>
+                    2022 - <span class="italics">i see me watching</span>, director / producer. experimental narrative short
+                    </br></br>
+                    screenings: Vancouver International Film Festival, Short Forum 2, Vancity Theatre, Vancouver BC (2022), Best of Animation + Film/Video Showcase, Reliance Theatre, ECU, Vancouver BC (2022), SPARKING: An Emily Carr Film and Screen Arts Graduate Showcase, Pacific Cinematheque, Vancouver BC (2022)
+                    </br></br>
+                    awards: Chancellors Jury Award, Winner, Emily Carr University of Art + Design (2022), VIVO Distribution Award, Winner (2022)
+                    </br></br>
+                    2020 - <span class="italics">Our City on Fire</span>, director / producer, experimental short, 16mm
+                    </br></br>
+                    screenings: Bien Agiter curated virtual program (by invitation) (2021)
+                    </br></br>
+                    2020 - <span class="italics">The Big Bang</span>, director / producer, experimental short, 16mm
+                    </br></br>
+                    screenings: BLITZ #37 curated program, Zumzieg Cinema, Barcelona ES (by invitation) (2021)
+                    </br></br>
+                    2019 - <span class="italics">PNEUMA</span>, director / producer, experimental short, 16mm to digital
+                    </br></br>
+                    photography
+                    </br></br>
+                    ongoing - <span classs="italics">X̱á7elcha (Lynn Creek) Watergrams</span>, 20 x 24 silver gelatin prints
+                    </br></br>
+                    notable project contributions
+                    </br></br>
+                    2021 - Animator / Assistant, <span class="italics">Ajjigiingiluktaaqtugut (We Are All Different)</span> by Lindsay McIntyre, experimental animation</br>
+                    2021 - Assistant / Photographer, <span class="italics">Lindsay McIntyre is Inviting You to a Scheduled Zoom Meeting</span> by Lindsay McIntyre</br>
+                    2021 - 1st Assistant Director / Assistant Camera, <span class="italics">My Fantasies Keep me up at Nite</span> by Celina De Leon</br>
+                    2021 - Set Decorator, <span class="italics">A Stargazers Guide to Filmmaking</span> by Warren Tang</br>
+                    </br></br>
+                    press / interviews
+                    </br></br>
+                    2022 - <span class="italics">Five Not-To-Miss Shows at the 9th Annual Capture Photography Festival</span>, SCOUT Magazine</br>
+                    2022 - <span class="italics">Truth, Intimacy and the Power of Photography through the Lenses of Khim Hipol, Abigail Pfortmueller, David Aquino and Sidney Gordon</span>, by Charisma Christal Thomas, Shumka Centre  for Creative Entrepreneurship</br>
+                    2021 - <span class="italics">Sidney Gordon Highlights the Importance of Communication and Collaboration with Artist Lindsay McIntyre</span>, by Nicole Yamamoto, Shumka Centre for Creative Entrepreneurship</br>
+                    </br></br>
+                    artist talks
+                    </br></br>
+                    2022 - <span class="italics">‘Stranger Than Fiction’ Artist Talk</span>, Capture Photography Festival
+                    </br></br>
+                    workshop facilatation / teaching
+                    </br></br>
+                    2021 - 2022 - <span class="italics">Shoebox Filmmaking for the Shoestring Filmmaker</span>, The Gathering, NIMAC, Teacher’s Assistant for experimental analog workshop series. Created and assembled workshop resources and materials, taught techniques, and ran demonstrations to a group of indigenous workshop participants.
+                    </br></br>
+                    curation
+                    </br></br>
+                    2022 - <span class="italics">Void of the Voice</span>, experimental film program for XINEMA, VIFF Centre’s Studio Theatre</br>
+                    2022 - <span class="italics">Times Ling Past</span>, experimental film program for XINEMA, VIFF Centre’s Studio Theatre</br>
+                    2022 - <span class="italics">Left with Grain</span>, experimental film program for VUCAVU
+                    </br></br>
+                    publications
+                    </br></br>
+                    2022 - <span class="italics">Handmade Cinema Guide</span>, self-published zine</br>
+                    2020 - <span class="italics">How Gentrification has Impacted “Vancouver’s” Outdoor Sex Workers</span>, self-published zine </br>
+                    2020 - <span class="italics">Beginners Guide to Analogue Cinema</span>, self-published zine</br>
+                    </br></br>
+                    collections / distribution
+                    </br></br>
+                    2022 - <span class="italics">i see me watching</span>, VIVO Media Arts Centre
             </p>
         </div>
 
         </section>
-</div>
+    </div>
     </body>
 </html>
+
