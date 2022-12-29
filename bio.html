@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,17 +9,47 @@
     <style>
 
 
-     @font-face {
-         font-family: 'Arial';
+          @font-face {
+         font-family: 'alte_haas_groteskregular';
+         src: url('fontregular/altehaasgroteskregular-webfont.woff2') format('woff2'),
+         url('fontregular/altehaasgroteskregular-webfont.woff') format('woff');
          font-weight: normal;
          font-style: normal;
 
      }
 
+     @font-face {
+         font-family: 'alte_haas_groteskbold';
+         src: url('fontbold/altehaasgroteskbold-webfont.woff2') format('woff2'),
+         url('fontbold/altehaasgroteskbold-webfont.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+
+     }
+
+     @font-face {
+         font-family: 'firamono_regular';
+         src: url('font/firamono-regular.woff2') format('woff2'),
+         url('font/firamono-regular.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+
+     }
+
+     @font-face {
+         font-family: 'firamono_bold';
+         src: url('font/firamono-bold.woff2') format('woff2'),
+         url('font/firamono-bold.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+
+     }
+
+
      html{
-         font-size:15px;
+         font-size:13px;
          line-height:1;
-         font-family: 'Arial';
+         font-family: 'firamono_regular';
      }
 
      body{
@@ -61,15 +90,17 @@
 
      .statement{
          grid-column: 2;
+         margin-right: 15px;
+         margin-left: 15px;
      }
 
 
      h2 {
          color: black;
-         font-size: 15px;
+         font-size: 13px;
          font-weight: normal;
          grid-column: 1;
-
+         font-family: 'alte_haas_groteskbold';
      }
 
 
@@ -80,18 +111,18 @@
          padding-left: 0;
          color: grey;
          margin-top: -0.5em;
-         font-size:15px;
+         font-size:13px;
      }
 
      p {
          color: black;
          grid-column: 2;
-         font-size:15px;
+         font-size:13px;
      }
 
      .grey {
-          color: grey;
-        }
+         color: black;
+     }
 
      a:hover {
          text-decoration: underline;
@@ -107,7 +138,7 @@
      }
 
      a.list{
-         color: grey;
+         color: black;
          text-decoration: none;
      }
 
@@ -120,11 +151,16 @@
          text-decoration: underline;
      }
 
-           h1 {
+     h1 {
          color: black;
-         font-size: 20px;
+         font-size: 18px;
          font-weight: bold;
          grid-column: 1;
+         font-family: 'alte_haas_groteskbold';
+     }
+
+     .current{
+         color: grey;
      }
 
 
@@ -133,39 +169,39 @@
 
         <div class="column1">
 
-        <div class="navigationbar">
+            <div class="navigationbar">
 
-        <h1> Sidney Gordon </h1>
+                <h1> Sidney Gordon </h1>
 
-        <h2> filmography </h2>
+                <h2> filmography </h2>
 
-        <ul>
-            <li><a class="list" href="iseemewatching.html">i see me watching</a></li>
-            <li><a class="list" href="pillowtalk.html">Pillow Talk</a></li>
-            <li><a class="list" href="ourcityonfire.html">Our City on Fire</a></li>
-            <li><a class="list" href="thebigbang.html">The Big Bang</a></li>
-            <li><a class="list" href="pneuma.html">PNEUMA</a></li>
-        </ul>
+                <ul>
+                    <li><a class="list" href="iseemewatching.html">i see me watching</a></li>
+                    <li><a class="list" href="pillowtalk.html">Pillow Talk</a></li>
+                    <li><a class="list" href="ourcityonfire.html">Our City on Fire</a></li>
+                    <li><a class="list" href="thebigbang.html">The Big Bang</a></li>
+                    <li><a class="list" href="pneuma.html">PNEUMA</a></li>
+                </ul>
 
-        <h2> photography </h2>
+                <h2> photography </h2>
 
-        <ul>
-            <li><a class="list" href="watergrams.html">X̱á7elcha (Lynn Creek) </br>Watergrams</a></li>
-        </ul>
+                <ul>
+                    <li><a class="list" href="watergrams.html">X̱á7elcha (Lynn Creek) </br>Watergrams</a></li>
+                </ul>
 
-        <h2>installation / performance</h2>
-        <ul>
-        <li><a class="list" href="installationperformance.html">Central Beam of Light</a></li>
-        </ul>
+                <h2>installation / performance</h2>
+                <ul>
+                    <li><a class="list" href="installationperformance.html">Central Beam of Light</a></li>
+                </ul>
 
-        <h2><a class="blacklink" href="bio.html">bio / artist statement</a></h2>
+                <h2><a class="blacklink" href="bio.html"><span class="current">bio / artist statement</span></a></h2>
 
-        <h2><a class="blacklink" href="cv.html">cv</a></h2>
+                <h2><a class="blacklink" href="cv.html">cv</a></h2>
 
-        <h2><a class="blacklink" href="https://vimeo.com/sidneygordon">vimeo</a> / <a class="blacklink" href="https://www.instagram.com/dirttones/?hl=en"> instagram</a> /
-            <a class="blacklink" href="mailto:sidneyg335@gmail.com ">email</a></h2>
+                <h2><a class="blacklink" href="https://vimeo.com/sidneygordon">vimeo</a> / <a class="blacklink" href="https://www.instagram.com/dirttones/?hl=en"> instagram</a> /
+                    <a class="blacklink" href="mailto:sidneyg335@gmail.com ">email</a></h2>
 
-        </div>
+            </div>
 
         </div>
 
@@ -173,30 +209,30 @@
 
             <div class="bio2">
 
-            <p>
-                <h1>bio</h1>
-            <span class="grey">
+                <p>
+                    <h1>bio</h1>
+                    <span class="grey">
 
-                Sidney Gordon (b. 2000) is a queer, non-binary, multimedia emulsion-based artist, born and raised on Treaty 4 territory. They hold a BMA in Film + Screen Arts from Emily Carr University of Art + Design in so-called “Vancouver”, where they have lived and worked since 2018. They are co-founder and curator of XINEMA, a monthly experimental film program that showcases local, multilevel, media artists in VIFF Centre’s Studio Theatre.
+                        Sidney Gordon (b. 2000) is a queer, non-binary, multimedia emulsion-based artist, born and raised on Treaty 4 territory. They hold a BMA in Film + Screen Arts from Emily Carr University of Art + Design in so-called “Vancouver”, where they have lived and worked since 2018. They are co-founder and curator of XINEMA, a monthly experimental film program that showcases local, multilevel, media artists in VIFF Centre’s Studio Theatre.
 
-            </br></br>
+                    </br></br>
 
-Their film <span class="italics">i see me watching</span> was awarded the Chancellors Award and Best Experimental by Emily Carr University, as well as the VIVO Distribution Award from VIVO Media Arts Centre (2022), and in 2021 they were longlisted for the Polygon Gallery’s Lind Prize.
+                    Their film <span class="italics">i see me watching</span> was awarded the Chancellors Award and Best Experimental by Emily Carr University, as well as the VIVO Distribution Award from VIVO Media Arts Centre (2022), and in 2021 they were longlisted for the Polygon Gallery’s Lind Prize.
 
-            </br></br>
-Their film <span class="italics">The Big Bang</span> has been screened by invitation in Zumzieg Cinema’s curated program BLITZ #37 (Barcelona ES), and their recent photographic series <span class="italics">Xá7elcha (Lynn Creek) Watergrams</span> was featured in Capture Photography Festival 2022 and ECU student exhibitions.
-            </p>
-            <p>
-            </br> </br></span></div>
+                    </br></br>
+                    Their film <span class="italics">The Big Bang</span> has been screened by invitation in Zumzieg Cinema’s curated program BLITZ #37 (Barcelona ES), and their recent photographic series <span class="italics">Xá7elcha (Lynn Creek) Watergrams</span> was featured in Capture Photography Festival 2022 and ECU student exhibitions.
+                </p>
+                <p>
+                    </br> </br></span></div>
             <div class="statement">
                 <h1>artist statement</h1>
-<span class="grey">
-My practice predominantly focuses on experimental analog filmmaking and alternative photography, expanding into media-based performance and installation. Through many cross-disciplinary eco/chemical processes, my work challenges the way viewers conventionally interact with everyday structures and materials. The main focus of my film work is creating experiential embodiment, often portraying and deriving from personal subconscious experiences, while my photographic practice dominantly focuses on cameraless holistic processes that question authorship through material collaborations. Alongside my interests in these areas, many of my works also engage with socio-political subjectivity, predominantly across the themes of intersectional feminism, environmentalism, and identity.
-</span></p>
+                <span class="grey">
+                    My practice predominantly focuses on experimental analog filmmaking and alternative photography, expanding into media-based performance and installation. Through many cross-disciplinary eco/chemical processes, my work challenges the way viewers conventionally interact with everyday structures and materials. The main focus of my film work is creating experiential embodiment, often portraying and deriving from personal subconscious experiences, while my photographic practice dominantly focuses on cameraless holistic processes that question authorship through material collaborations. Alongside my interests in these areas, many of my works also engage with socio-political subjectivity, predominantly across the themes of intersectional feminism, environmentalism, and identity.
+                </span></p>
             </div></div>
 
         </section>
-</div>
+    </div>
     </body>
 </html>
 
