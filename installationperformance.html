@@ -8,23 +8,51 @@
 
     <style>
 
+          @font-face {
+         font-family: 'alte_haas_groteskregular';
+         src: url('fontregular/altehaasgroteskregular-webfont.woff2') format('woff2'),
+         url('fontregular/altehaasgroteskregular-webfont.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+
+     }
 
      @font-face {
-         font-family: 'Arial';
+         font-family: 'alte_haas_groteskbold';
+         src: url('fontbold/altehaasgroteskbold-webfont.woff2') format('woff2'),
+         url('fontbold/altehaasgroteskbold-webfont.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+
+     }
+
+     @font-face {
+         font-family: 'firamono_regular';
+         src: url('font/firamono-regular.woff2') format('woff2'),
+         url('font/firamono-regular.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+
+     }
+
+     @font-face {
+         font-family: 'firamono_bold';
+         src: url('font/firamono-bold.woff2') format('woff2'),
+         url('font/firamono-bold.woff') format('woff');
          font-weight: normal;
          font-style: normal;
 
      }
 
      html{
-         font-size:15px;
+         font-size:13px;
          line-height:1;
-         font-family: 'Arial';
+         font-family: 'firamono_regular';
      }
 
      body{
          background-color: white;
-         padding: 20px;
+         padding: 18px;
      }
 
      .wrapper {
@@ -48,34 +76,39 @@
          grid-column: 2;
          margin-left: 1fr;
          position: relative;
+         margin-right: 15px;
+         margin-left: 15px;
      }
 
      h1 {
          color: black;
-         font-size: 20px;
+         font-size: 18px;
          font-weight: bold;
          grid-column: 1;
+         font-family: 'alte_haas_groteskbold';
      }
 
      h2 {
          color: black;
-         font-size: 15px;
+         font-size: 13px;
          font-weight: normal;
          grid-column: 1;
+         font-family: 'alte_haas_groteskbold';
 
      }
 
      h3 {
          color: black;
-         font-size: 1.6rem;
+         font-size: 18px;
          font-weight: bold;
          grid-column: 2;
          text-align: center;
+         font-family: 'alte_haas_groteskbold';
      }
 
      span.h4 {
-         color: grey;
-         font-size: 15px;
+         color: black;
+         font-size: 13px;
          font-weight: normal;
          grid-column: 2;
          text-align: center;
@@ -90,7 +123,7 @@
      }
 
      p {
-         color: grey;
+         color: black;
          grid-column: 2;
      }
 
@@ -137,11 +170,12 @@
      }
 
      p.description{
-         font-size: 0.9rem;
+         font-size: 13px;
+         font-family: 'firamono_regular';
      }
 
      a.list{
-         color: grey;
+         color: black;
          text-decoration: none;
      }
 
@@ -152,13 +186,18 @@
      a:hover {
          text-decoration: underline;
      }
-        
-             .description{
-         font-size: 0.9rem;
+
+     .description{
+         font-size: 13px;
          color: grey;
          grid-column: 2;
          font-weight: normal;
          text-align: center;
+         font-family: 'firamono_regular';
+     }
+
+     .current {
+         color: grey;
      }
 
     </style>
@@ -188,7 +227,7 @@
 
         <h2>installation / performance</h2>
         <ul>
-        <li><a class="list" href="installationperformance.html">Central Beam of Light</a></li>
+            <li><a class="list" href="installationperformance.html"><span class="current">Central Beam of Light</span></a></li>
         </ul>
 
         <h2><a class="blacklink" href="bio.html">bio / artist statement</a></h2>
@@ -241,18 +280,18 @@
 
 </br>
 
-            <p>
+<p>
 
-                Performances:
+    Performances:
             </br> </br>
             2022 - Bien Agiter curated virtual NYE program (by invitation)
 
-            </p>
+</p>
             </br>
 
         </div>
 
         </section>
-</div>
+    </div>
     </body>
 </html>
