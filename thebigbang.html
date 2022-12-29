@@ -9,17 +9,46 @@
     <style>
 
 
+          @font-face {
+         font-family: 'alte_haas_groteskregular';
+         src: url('fontregular/altehaasgroteskregular-webfont.woff2') format('woff2'),
+         url('fontregular/altehaasgroteskregular-webfont.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+
+     }
+
      @font-face {
-         font-family: 'Arial';
+         font-family: 'alte_haas_groteskbold';
+         src: url('fontbold/altehaasgroteskbold-webfont.woff2') format('woff2'),
+         url('fontbold/altehaasgroteskbold-webfont.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+
+     }
+
+     @font-face {
+         font-family: 'firamono_regular';
+         src: url('font/firamono-regular.woff2') format('woff2'),
+         url('font/firamono-regular.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+
+     }
+
+     @font-face {
+         font-family: 'firamono_bold';
+         src: url('font/firamono-bold.woff2') format('woff2'),
+         url('font/firamono-bold.woff') format('woff');
          font-weight: normal;
          font-style: normal;
 
      }
 
      html{
-         font-size:15px;
+         font-size:13px;
          line-height:1;
-         font-family: 'Arial';
+         font-family: 'firamono_regular';
      }
 
      body{
@@ -52,30 +81,33 @@
 
      h1 {
          color: black;
-         font-size: 20px;
+         font-size: 18px;
          font-weight: bold;
          grid-column: 1;
+         font-family: 'alte_haas_groteskbold';
      }
 
      h2 {
          color: black;
-         font-size: 15px;
+         font-size: 13px;
          font-weight: normal;
          grid-column: 1;
+         font-family: 'alte_haas_groteskbold';
 
      }
 
      h3 {
          color: black;
-         font-size: 1.6rem;
+         font-size: 18px;
          font-weight: bold;
          grid-column: 2;
          text-align: center;
+         font-family: 'alte_haas_groteskbold';
      }
 
      span.h4 {
          color: grey;
-         font-size: 15px;
+         font-size: 13px;
          font-weight: normal;
          grid-column: 2;
          text-align: center;
@@ -85,12 +117,12 @@
          grid-column: 1;
          list-style-type: none;
          padding-left: 0;
-         color: grey;
+         color: black;
          margin-top: -0.5em;
      }
 
      p {
-         color: grey;
+         color: black;
          grid-column: 2;
      }
 
@@ -128,20 +160,25 @@
      }
 
      a.list{
-         color: grey;
+         color: black;
          text-decoration: none;
      }
 
      a.list:hover{
          text-decoration: underline;
      }
-        
-             .description{
-         font-size: 0.9rem;
+
+     .description{
+         font-size: 13px;
          color: grey;
          grid-column: 2;
          font-weight: normal;
          text-align: center;
+         font-family: 'firamono_regular';
+     }
+
+     .current {
+         color: grey;
      }
 
     </style>
@@ -149,38 +186,38 @@
 
         <div class="column1">
 
-        <div class="navigationbar">
+            <div class="navigationbar">
 
-        <h1> Sidney Gordon </h1>
+                <h1> Sidney Gordon </h1>
 
-        <h2> filmography </h2>
+                <h2> filmography </h2>
 
-        <ul>
-            <li><a class="list" href="iseemewatching.html">i see me watching<a><li>
-            <li><a class="list" href="pillowtalk.html">Pillow Talk</a></li>
-            <li><a class="list" href="ourcityonfire.html">Our City on Fire</a></li>
-            <li><a class="list" href="thebigbang.html">The Big Bang</a></li>
-            <li><a class="list" href="pneuma.html">PNEUMA</a></li>
-        </ul>
+                <ul>
+                    <li><a class="list" href="iseemewatching.html">i see me watching<a><li>
+                        <li><a class="list" href="pillowtalk.html">Pillow Talk</a></li>
+                        <li><a class="list" href="ourcityonfire.html">Our City on Fire</a></li>
+                        <li><a class="list" href="thebigbang.html"><span class="current">The Big Bang</span></a></li>
+                        <li><a class="list" href="pneuma.html">PNEUMA</a></li>
+                </ul>
 
-        <h2> photography </h2>
+                <h2> photography </h2>
 
-        <ul>
-            <li><a class="list" href="watergrams.html">X̱á7elcha (Lynn Creek) </br>Watergrams</a></li>
-        </ul>
+                <ul>
+                    <li><a class="list" href="watergrams.html">X̱á7elcha (Lynn Creek) </br>Watergrams</a></li>
+                </ul>
 
-        <h2>installation / performance</h2>
-        <ul>
-        <li><a class="list" href="installationperformance.html">Central Beam of Light</a></li>
-        </ul>
+                <h2>installation / performance</h2>
+                <ul>
+                    <li><a class="list" href="installationperformance.html">Central Beam of Light</a></li>
+                </ul>
 
-        <h2><a class="blacklink" href="bio.html"> bio / artist statement </a></h2>
+                <h2><a class="blacklink" href="bio.html"> bio / artist statement </a></h2>
 
                 <h2><a class="blacklink" href="cv.html">cv</a></h2>
 
-        <h2><a class="blacklink" href="https://vimeo.com/sidneygordon">vimeo</a> / <a class="blacklink" href="https://www.instagram.com/dirttones/?hl=en">instagram</a> / <a class="blacklink" href="mailto:sidneyg335@gmail.com ">email</a></h2>
+                <h2><a class="blacklink" href="https://vimeo.com/sidneygordon">vimeo</a> / <a class="blacklink" href="https://www.instagram.com/dirttones/?hl=en">instagram</a> / <a class="blacklink" href="mailto:sidneyg335@gmail.com ">email</a></h2>
 
-        </div>
+            </div>
 
         </div>
 
@@ -200,38 +237,39 @@
 
 
 
-        </br>
+                    </br>
 
-        <p>
-            
-            Using handmade cinema techniques such as rapid cutting, scratching, bleaching and inking on found 16mm footage, <span class="italics">The Big Bang</span> crafts a playful parody of the widely theorized “Big Bang”. The film creates an ambiguous parallel between the human and non-human, placing the two against each other. In doing so, viewers are forced to piece together individually manipulated excerpts to question dynamics that reflect on three main topics: power, science, and the human epoch.
-        </br></br>
-            manipulated found 16mm footage, scratched, bleached, inked, polished. optical and digital soundtrack.
-            </br></br>
-            Scanning: Film House
+                    <p>
 
-        </p>
+                        Using handmade cinema techniques such as rapid cutting, scratching, bleaching and inking on found 16mm footage, <span class="italics">The Big Bang</span> crafts a playful parody of the widely theorized “Big Bang”. The film creates an ambiguous parallel between the human and non-human, placing the two against each other. In doing so, viewers are forced to piece together individually manipulated excerpts to question dynamics that reflect on three main topics: power, science, and the human epoch.
+                    </br></br>
+                    manipulated found 16mm footage, scratched, bleached, inked, polished. optical and digital soundtrack.
+                    </br></br>
+                    Scanning: Film House
 
-            </br>
+                    </p>
 
-            <img id="img2" src="bigbang2.jpg">
-</br></br>
-            <img id="img2" src="bigbang3.jpg">
-</br></br>
-            <img id="img2" src="bigbang4.jpg">
-</br></br>
+                    </br>
 
-        <p>
-            Screenings:
-            </br></br>
-            2021 - BLITZ #37 curated program, Zumzieg Cinema, Barcelona ES (by invitation)
-        </p>
+                    <img id="img2" src="bigbang2.jpg">
+                    </br></br>
+                    <img id="img2" src="bigbang3.jpg">
+                    </br></br>
+                    <img id="img2" src="bigbang4.jpg">
+                    </br></br>
 
-        </br>
+                    <p>
+                        Screenings:
+                    </br></br>
+                    2021 - BLITZ #37 curated program, Zumzieg Cinema, Barcelona ES (by invitation)
+                    </p>
+
+                    </br>
 
         </div>
 
         </section>
-</div>
+    </div>
     </body>
 </html>
+
