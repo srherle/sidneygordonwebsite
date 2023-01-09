@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sidney Gordon</title>
+        <link rel="icon" href="favicon.png" type="image/x-icon">
+        <link href='https://fonts.googleapis.com/css?family=Fira Mono' rel='stylesheet'>
+    </head>
+
+    <style>
+
+
+     @font-face {
+         font-family: 'alte_haas_groteskregular';
+         src: url('fontregular/altehaasgroteskregular-webfont.woff2') format('woff2'),
+         url('fontregular/altehaasgroteskregular-webfont.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+
+     }
+
+     @font-face {
+         font-family: 'alte_haas_groteskbold';
+         src: url('fontbold/altehaasgroteskbold-webfont.woff2') format('woff2'),
+         url('fontbold/altehaasgroteskbold-webfont.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+
+     }
+
+     @font-face {
+         font-family: 'firamono_regular';
+         src: url('font/firamono-regular.woff2') format('woff2'),
+         url('font/firamono-regular.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+
+     }
+
+     @font-face {
+         font-family: 'firamono_bold';
+         src: url('font/firamono-bold.woff2') format('woff2'),
+         url('font/firamono-bold.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+
+     }
+
+     html{
+         font-size:13px;
+         line-height: 1;
+         font-family:'Fira Mono', 'Courier';
+     }
+
+     body{
+         background-color: white;
+         padding: 20px;
+     }
+
+     .wrapper {
+         display: grid;
+         grid-template-columns: 1fr 3fr 0.5fr;
+         grid-template-rows:1fr;
+     }
+
+     .navigationbar{
+         position: fixed;
+         grid-column: 1;
+     }
+
+     .column1{
+         grid-column: 1;
+         position: relative;
+         margin-right: 175px;
+     }
+
+     .artwork{
+         grid-column: 2;
+         margin-left: 1fr;
+         position: relative;
+         margin-right: 15px;
+         margin-left: 15px;
+     }
+
+     h1 {
+         color: black;
+         font-size: 18px;
+         font-weight: bold;
+         grid-column: 1;
+         font-family: 'alte_haas_groteskbold';
+     }
+
+     h2 {
+         color: black;
+         font-size: 13px;
+         font-weight: normal;
+         grid-column: 1;
+         font-family: 'alte_haas_groteskbold';
+
+     }
+
+
+     h3 {
+         color: black;
+         font-size: 18px;
+         font-weight: bold;
+         grid-column: 2;
+         text-align: center;
+         font-family: 'alte_haas_groteskbold';
+         margin-bottom: 0.5rem;
+
+     }
+
+     span.h4 {
+         color: black;
+         font-size: 13px;
+         font-weight: normal;
+         grid-column: 2;
+         text-align: center;
+     }
+
+     ul {
+         grid-column: 1;
+         list-style-type: none;
+         padding-left: 0;
+         color: black;
+         margin-top: -0.5em;
+     }
+
+     p {
+         color: black;
+         grid-column: 2;
+     }
+
+     a{
+         text-decoration: none;
+     }
+
+     a.blacklink{
+         color: black;
+     }
+
+
+     a:hover {
+         text-decoration: underline;
+     }
+
+     img{
+         max-width: 100%;
+     }
+
+     .img1{
+         grid-column: 2;
+     }
+
+     .img2{
+         grid-column: 2;
+     }
+
+     .img3{
+         grid-column: 2;
+     }
+
+     .italics{
+         font-style: italic;
+     }
+
+     a.list{
+         color: black;
+         text-decoration: none;
+     }
+
+     a.list:hover{
+         text-decoration: underline;
+     }
+
+     .description{
+         font-size: 13px;
+         color: silver;
+         grid-column: 2;
+         font-weight: normal;
+         text-align: center;
+         line-height: 100%;
+         font-family: 'Fira Mono', 'Courier';
+         margin-top: -0.5em;
+     }
+
+     .current {
+         color: silver;
+     }
+        
+                .name {
+                     margin-bottom: 40px;
+                     margin-top: 20px;
+        }
+        
+        .margin {
+            margin-right: 105px;
+            margin-left: 105px;
+        }
+
+    </style>
+    <div class="wrapper">
+
+        <div class="column1">
+
+            <div class="navigationbar">
+
+                <h1><div class="name"> Sidney Gordon </div></h1>
+
+                <h2> filmography </h2>
+
+                <ul>
+                    <li><a class="list" href="iseemewatching.html">i see me watching</a><li>
+                        <li><a class="list" href="pillowtalk.html">Pillow Talk</a></li>
+                        <li><a class="list" href="ourcityonfire.html">Our City on Fire</a></li>
+                        <li><a class="list" href="thebigbang.html">The Big Bang</a></li>
+                        <li><a class="list" href="pneuma.html">PNEUMA</a></li>
+                </ul>
+
+                <h2> photography </h2>
+
+                <ul>
+                    <li><a class="list"" href="watergrams.html">X̱á7elcha (Lynn Creek) </br>Watergrams</a></li>
+                    <li><a class="list"" href="ionabeachrubbings.html">Iona Beach Rubbings</a></li>
+                </ul>
+
+                <h2>installation / performance</h2>
+                <ul>
+                    <li><a class="list" href="installationperformance.html">Central Beam of Light</a></li>
+                </ul>
+
+                <h2><a class="blacklink" href="bio.html">bio / artist statement </a></h2>
+
+                <h2><a class="blacklink" href="cv.html">cv</a></h2>
+
+                <h2><a class="blacklink" href="https://vimeo.com/sidneygordon">vimeo</a> / <a class="blacklink" href="https://www.instagram.com/dirttones/?hl=en">instagram</a> / <a class="blacklink" href="mailto:sidneyg335@gmail.com ">email</a></h2>
+
+              <h2>commissions</h2>
+               <ul>
+                    <li><a class="list" href="deliverusfromevil.html"><span class="current">Deliver Us From Evil<span class="current"></a></li>
+                </ul>
+              
+            </div>
+
+        </div>
+
+        <div class="artwork">
+
+            <h3><span class="italics">Deliver Us From Evil</span></br>
+
+                      <div class="description"></br>2022, hand-processed 16mm to digital,</br> 
+single-channel video with sound, 06:37 min.
+</div>
+            </h3>
+
+            <br>
+
+            <div class="margin">
+            <div style="padding:70% 0 0 0;position:relative;"><iframe width="560" height="315" src="https://www.youtube.com/embed/Ps89mzAuy6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></script>
+            </div>
+
+
+                    </br>
+
+                    <p>
+                      **STROBE WARNING**
+                      </br></br>
+                      
+                      Images dance in and out of frame and focus while viewers are taken on a psychological journey of an individual trapped inside of a living, breathing building.
+
+                    </br></br>
+                      
+                      Made in reference and response to Hålbå’s emotionally charged <span class="italics">Deliver us from Evil</span>; a track composed in three parts, which portrays the story of discovering demons, fighting with them, and living in peace after having defeated them.
+
+                      </br></br>
+                      
+                      Made for SUBVERTED’s Facing Wounds VA release by contacting printing 16mm found footage with a flashlight, sock & my feet, & hand-processing in my small home bathroom.
+                      
+                      </br></br>
+                      
+                      Track: 
+                      
+                      </br></br>
+                      
+                      Writer and Producer: Hålbå</br>
+                      Release: SUBVERTED</br>
+                      Audio Mastering: Linn Elisabet</br>
+                      Special thanks: </br>
+                      Celina de Leon</br>
+                      Lindsay McIntyre
+                      
+                      </br></br>
+                
+
+                    </p>
+
+                    </br>
+                    <div class="margin">
+                    <img id="img2" src="deliver1.jpg">
+                    </br></br>
+                    <img id="img2" src="deliver2.jpg">
+                    </br></br>
+                    <img id="img2" src="deliver3.JPG">
+                      </br></br>
+                    <img id="img2" src="deliver4.JPG">
+                      </br></br>
+                    <img id="img2" src="deliver5.JPG">
+                      </br></br>
+                    <img id="img2" src="deliver6.JPG">
+                    </div>
+
+       
+
+        </div>
+
+        </section>
+    </div>
+    </body>
+</html>
