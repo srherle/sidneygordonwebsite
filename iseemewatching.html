@@ -5,7 +5,7 @@
         <title>Sidney Gordon</title>
         <link rel="icon" href="favicon.png" type="image/x-icon">
         <link href='https://fonts.googleapis.com/css?family=Fira Mono' rel='stylesheet'>
-        <link rel="stylesheet" href="stylesheet.css">
+
     </head>
 
     <style>
@@ -199,6 +199,65 @@
             margin-right: 105px;
             margin-left: 105px;
         }
+        
+             @media (orientation:portrait) {
+
+         .wrapper {
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             padding: 10%;
+         }
+
+         .column1 {
+             display: none;
+         }
+
+         .bio {
+             grid-column: 1 / 3;
+             display: flex;
+             justify-content: center;
+             text-align: center;
+             flex-direction: column;
+         }
+
+         .artwork {
+             grid-column: 1 / 3;
+         }
+
+         .bio2 {
+             font-size: 2rem;
+         }
+
+         .statement {
+             font-size: 2rem;
+         }
+
+         h1 {
+             font-size: 3rem;
+         }
+
+         h3 {
+             font-size: 3rem;
+         }
+
+         .description {
+             font-size: 2rem;
+         }
+
+         p {
+             font-size: 2rem;
+         }
+
+         .margin {
+             margin-right: 0px;
+             margin-left: 0px;
+         }
+
+
+
+
+     }
 
     </style>
     <div class="wrapper">
