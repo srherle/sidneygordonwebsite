@@ -5,7 +5,6 @@
         <title>Sidney Gordon</title>
         <link rel="icon" href="http://sidneygordon.ca/favicon.png" type="image/x-icon">
         <link href='https://fonts.googleapis.com/css?family=Fira Mono' rel='stylesheet'>
-          <link rel="stylesheet" href="stylesheet.css">
     </head>
 
     <style>
@@ -172,6 +171,45 @@
                      margin-bottom: 40px;
                      margin-top: 20px;
         }
+        
+             @media (orientation:portrait) {
+
+         .wrapper {
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             padding: 10%;
+         }
+
+         .column1{
+             margin-right: 0px;
+             grid-column: 1 / 3;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             text-align: center;
+         }
+
+         .navigationbar {
+            position: relative;
+         }
+
+         .bio {
+             display: none;
+         }
+
+         ul {
+             font-size: 3rem;
+         }
+
+         h2 {
+             font-size: 3rem;
+         }
+
+         h1 {
+             font-size: 3.5rem;
+         }
+     }
 
       
 
