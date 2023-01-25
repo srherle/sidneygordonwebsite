@@ -172,22 +172,26 @@
                      margin-top: 20px;
         }
         
-             @media (orientation:portrait) {
+   @media (orientation:portrait) {
+
+         body {
+             padding: 0px;
+         }
 
          .wrapper {
              display: flex;
              align-items: center;
              justify-content: center;
              padding: 10%;
+             padding-left: 0%;
+             margin-left:-200px;
          }
 
          .column1{
              margin-right: 0px;
              grid-column: 1 / 3;
              display: flex;
-             justify-content: center;
-             align-items: center;
-             text-align: center;
+             justify-content: start;
          }
 
          .navigationbar {
@@ -209,7 +213,7 @@
          h1 {
              font-size: 3.5rem;
          }
-                 
+
                  .current {
                      color: black;
                  }
